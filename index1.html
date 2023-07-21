@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOCADORA FOX 2000</title>
+
+  <!-- favorito icone-->
+  <link rel="icon" type="image/png" href="/img/film.png" /> <!-- AQUI CONFIGURADO O ICONE NO NAVEGADOR (LUGAR DO MUNDO)-->
+
+  <!-- estilização css-->
+  <link rel="stylesheet" type="text/css" href="/img/style.css" /> <!-- AQUI CHAMA A ESTILIZAÇÃO O ARQUIVO CSS-->
+
+  <!-- ESTILIZAÇÃO DO CSS BOOTSTRAP-->
+  <link
+   href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
+   rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" 
+   crossorigin="anonymous" />
+<!-- SCRIPT BOOTSTRAP  LOGO ABAIXO INICIANDO EM SCRIPT-->
+   <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
+   integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
+   crossorigin="anonymous"></script>
+
+<script src="script.js"> </script>
+
+</head>
+
+<body>
+ 
+
+  <nav class="navbar navbar-expand-lg bg-light">
+
+    <div>
+      <img class="me-3" src="/img/film.svg" alt="LOCADORA" />
+      <a class= "navbar-brand" href="#topo">LOCADORA FOX 2000 </a>
+
+
+      <div class="collapse navbar-collapse" id="navBarSupportedContent">  <!--menu colapsado -->
+        
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <!-- UL significa lista -->
+          <li>
+            <!-- LI significa os links da lista para onde sera direcionado / arial, indicando que está e permanece na mesma página-->
+            <a class="nav-link active" aria-current="page" href="#tabFilmes"> 
+              Filmes Lançamento</a>
+          </li>
+
+         
+              </li>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="dropGeneros" role="burron"
+            data-bs-toggle="dropdown" href="#drop"
+            aria-expanded="false">
+               Filmes por Categora</a>
+
+              <ul class="dropdown-menu" arial-LabelLedby="navbarDropdownMenuLink">
+
+
+                <li><a class="dropdown-item" href="#gacao">Ação</a></li>
+                <li><a class="dropdown-item" href="#ganim">Animação</a></li>
+                <li><a class="dropdown-item" href="#groman">Romance</a></li>
+                <li><a class="dropdown-item" href="#gsus">Suspense</a></li>
+                <li><a class="dropdown-item" href="#gter">Terror</a></li></ul>
+                
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="cadfilmes">Cadastrar Filmes</a>
+              </li>
+        </ul>
+
+
+      </div>
+    </div>
+  </nav>
+  <h1 class="display-1 text-center mb-5 MT-5" id="topo"><b>LOCADORA FOX 2000</b></h1>
+  <!-- Adicione o código do carrossel abaixo do <body> -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/img/c1.webp" class="d-block w-100" alt="Imagem 1">
+        </div>
+        <div class="carousel-item">
+          <img src="/img/c2.webp" class="d-block w-100" alt="Imagem 2">
+        </div>
+        <div class="carousel-item">
+          <img src="/img/c3.jpeg" class="d-block w-100" alt="Imagem 3">
+        </div>
+        <div class="carousel-item">
+          <img src="/img/c6.jpg" class="d-block w-100" alt="Imagem 4">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  <div class="container">
+    <table class="table table-striped table-houver">
+      <thead>
+        <tr>
+          <th scope="col">Código</th>
+          <th scope="col">Titulo</th>
+          <th scope="col">Diretor</th>
+          <th scope="col">Lançamento</th>
+          <th scope="col">Gêneros</th>
+          <th scope="col">Ator/Atriz Principal</th>
+          <th scope="col">Nota IMDb</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th class="text-center table-primary" colspan="7" id="gacao"> Ação</th>
+        </tr>
+        <tr>
+          <th scope="row">1</th>
+          <td>O Segredo</td>
+          <td>Rogério Lima</td>
+          <td>1986</td>
+          <td>Ação</td>
+          <td> Maria </td>
+          <td> 9 </td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Resgate 2</td>
+          <td>Samuel Cogo</td>
+          <td>1986</td>
+          <td>Ação</td>
+          <td>Nome Ator</td>
+          <td>9</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Esquema de Rico</td>
+          <td>Filipe Cogo</td>
+          <td>1991</td>
+          <td>Ação</td>
+          <td>Nome Ator</td>
+          <td>9</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>Mistério em Paris</td>
+          <td>Ritieli Cogo</td>
+          <td>1984</td>
+          <td>Ação</td>
+          <td>Nome Ator</td>
+          <td>9</td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>Mad Max: Estrada da Fúria</td>
+          <td>George Miller</td>
+          <td>2015</td>
+          <td>Ação</td>
+          <td>Nome Ator</td>
+          <td>9</td>
+        </tr>
+        
+        <tr>
+          <th scope="row">6</th>
+          <td>007: Skyfall</td>
+          <td>Sam Mendes</td>
+          <td>2012</td>
+          <td>Ação</td>
+          <td>Nome Ator</td>
+          <td>9</td>
+        </tr>
+        
+        <tr>
+          <th scope="row">7</th>
+          <td>Deadpool</td>
+          <td>Tim Miller</td>
+          <td>2016</td>
+          <td>Ação</td>
+          <td>Nome Ator</td>
+          <td>9</td>
+        </tr>
+        
+        <tr>
+          <th scope="row">8</th>
+          <td>Homem de Ferro</td>
+          <td>Jon Favreau</td>
+          <td>2008</td>
+          <td>Ação</td>
+          <td>Nome Ator</td>
+          <td>9</td>
+        </tr>
+        
+        <tr>
+          <th scope="row">9</th>
+          <td>Mulher-Maravilha</td>
+          <td>Patty Jenkins</td>
+          <td>2017</td>
+          <td>Ação</td>
+          <td>Nome Ator</td>
+          <td>9</td>
+        </tr>
+        
+        <tr>
+          <th scope="row">10</th>
+          <td>O Exterminador do Futuro 2: O Julgamento Final</td>
+          <td>James Cameron</td>
+          <td>1991</td>
+          <td>Ação</td>
+          <td>Nome Ator</td>
+          <td>9</td>
+        </tr>
+      </tbody>
+
+      <tbody>
+        <tr>
+          <th class="text-center table-primary" colspan="7" id="gter"> Terror</th>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>A Descoberta</td>
+          <td>Filipe e Samuel Cogo</td>
+          <td>1995</td>
+          <td>Terror</td>
+          <td>Nome Ator</td>
+          <td>9</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>A Turma da Mônica</td>
+          <td>Mauricio de Souza</td>
+          <td>1971</td>
+          <td>Terror</td>
+          <td>Nome Ator</td>
+          <td>9</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>Biblia Sagrada</td>
+          <td>Jesus</td>
+          <td>1822</td>
+          <td>Terror</td>
+          <td>Nome Ator</td>
+          <td>9</td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>Nome da Obra</td>
+          <td>Nome do autor</td>
+          <td>Ano de lançamento</td>
+          <td>Tipo de gênero</td>
+          <td>Nome Ator</td>
+          <td>9</td>
+        </tr>
+
+        <tbody>
+          <tr>
+            <th class="text-center table-primary" colspan="7" id="groman"> Romance</th>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td>Antes do Amanhecer</td>
+            <td>Autor</td>
+            <td>1995</td>
+            <td>Romance</td>
+            <td>Nome Ator</td>
+          <td>9</td>
+          </tr>
+
+          <tr>
+            <th scope="row">2</th>
+            <td>Amor sublime amor</td>
+            <td>Autor</td>
+            <td>2021</td>
+            <td>Romance</td>
+            <td>Nome Ator</td>
+          <td>9</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Um Amor para Recordar</td>
+            <td>Adam Shankman</td>
+            <td>2002</td>
+            <td>Romance</td>
+            <td>Nome Ator</td>
+          <td>9</td>
+          </tr>
+          
+          <tr>
+            <th scope="row">4</th>
+            <td>Romeu + Julieta</td>
+            <td>Baz Luhrmann</td>
+            <td>1996</td>
+            <td>Romance</td>
+            <td>Nome Ator</td>
+          <td>9</td>
+          </tr>
+          
+          <tr>
+            <th scope="row">5</th>
+            <td>Antes do Amanhecer</td>
+            <td>Richard Linklater</td>
+            <td>1995</td>
+            <td>Romance</td>
+            <td>Nome Ator</td>
+          <td>9</td>
+          </tr>
+          
+          <tr>
+            <th scope="row">6</th>
+            <td>Simplesmente Acontece</td>
+            <td>Christian Ditter</td>
+            <td>2014</td>
+            <td>Romance</td>
+            <td>Nome Ator</td>
+          <td>9</td>
+          </tr>
+          
+          <tr>
+            <th scope="row">7</th>
+            <td>La La Land: Cantando Estações</td>
+            <td>Damien Chazelle</td>
+            <td>2016</td>
+            <td>Romance</td>
+            <td>Nome Ator</td>
+          <td>9</td>
+          </tr>
+          
+          <tr>
+            <th scope="row">8</th>
+            <td>Doce Novembro</td>
+            <td>Pat O'Connor</td>
+            <td>2001</td>
+            <td>Romance</td>
+            <td>Nome Ator</td>
+          <td>9</td>
+          </tr>
+          
+          <tr>
+            <th scope="row">9</th>
+            <td>Sob o Sol da Toscana</td>
+            <td>Audrey Wells</td>
+            <td>2003</td>
+            <td>Romance</td>
+            <td>Nome Ator</td>
+          <td>9</td>
+          </tr>
+          
+          <tr>
+            <th scope="row">10</th>
+            <td>Amor e Outras Drogas</td>
+            <td>Edward Zwick</td>
+            <td>2010</td>
+            <td>Romance</td>
+            <td>Nome Ator</td>
+          <td>9</td>
+      </tbody>
+      <tr>
+        <th class="text-center table-primary" colspan="7" id="gsus"> Suspense</th>
+      </tr>
+      <tr>
+        <th scope="row">1</th>
+        <td>O Sexto Sentido</td>
+        <td>M. Night Shyamalan</td>
+        <td>1999</td>
+        <td>Suspense</td>
+        <td>Nome Ator</td>
+          <td>9</td>
+      </tr>
+      
+      <tr>
+        <th scope="row">2</th>
+        <td>O Silêncio dos Inocentes</td>
+        <td>Jonathan Demme</td>
+        <td>1991</td>
+        <td>Suspense</td>
+        <td>Nome Ator</td>
+          <td>9</td>
+      </tr>
+      
+      <tr>
+        <th scope="row">3</th>
+        <td>A Origem</td>
+        <td>Christopher Nolan</td>
+        <td>2010</td>
+        <td>Suspense</td>
+        <td>Nome Ator</td>
+          <td>9</td>
+      </tr>
+      
+      <tr>
+        <th scope="row">4</th>
+        <td>Seven: Os Sete Crimes Capitais</td>
+        <td>David Fincher</td>
+        <td>1995</td>
+        <td>Suspense</td>
+        <td>Nome Ator</td>
+          <td>9</td>
+      </tr>
+      
+      <tr>
+        <th scope="row">5</th>
+        <td>O Cisne Negro</td>
+        <td>Darren Aronofsky</td>
+        <td>2010</td>
+        <td>Suspense</td>
+        <td>Nome Ator</td>
+        <td>9</td>
+      </tr>
+      
+      <tr>
+        <th scope="row">6</th>
+        <td>Garota Exemplar</td>
+        <td>David Fincher</td>
+        <td>2014</td>
+        <td>Suspense</td>
+        <td>Nome Ator</td>
+        <td>9</td>
+      </tr>
+      
+      <tr>
+        <th scope="row">7</th>
+        <td>Ilha do Medo</td>
+        <td>Martin Scorsese</td>
+        <td>2010</td>
+        <td>Suspense</td>
+        <td>Nome Ator</td>
+        <td>9</td>
+      </tr>
+      
+      <tr>
+        <th scope="row">8</th>
+        <td>Psicose</td>
+        <td>Alfred Hitchcock</td>
+        <td>1960</td>
+        <td>Suspense</td>
+        <td>Nome Ator</td>
+        <td>9</td>
+      </tr>
+      
+      <tr>
+        <th scope="row">9</th>
+        <td>Clube da Luta</td>
+        <td>David Fincher</td>
+        <td>1999</td>
+        <td>Suspense</td>
+        <td>Nome Ator</td>
+        <td>9</td>
+      </tr>
+      
+      <tr>
+        <th scope="row">10</th>
+        <td>Sangue Negro</td>
+        <td>Paul Thomas Anderson</td>
+        <td>2007</td>
+        <td>Suspense</td>
+        <td>Nome Ator</td>
+        <td>9</td>
+      </tr>
+
+      <tr>
+        <th class="text-center table-primary" colspan="7" id="ganim"> Animação</th>
+      </tr>
+      <tr>
+        <th scope="row">1</th>
+        <td>Toy Story</td>
+        <td>John Lasseter</td>
+        <td>1995</td>
+        <td>Animação</td>
+        <td>Nome Ator</td>
+        <td>9</td>
+      </tr>
+      
+      <tr>
+        <th scope="row">2</th>
+        <td>A Viagem de Chihiro</td>
+        <td>Hayao Miyazaki</td>
+        <td>2001</td>
+        <td>Animação</td>
+        <td>Nome Ator</td>
+        <td>9</td>
+      </tr>
+      
+      <tr>
+        <th scope="row">3</th>
+        <td>O Rei Leão</td>
+        <td>Rob Minkoff, Roger Allers</td>
+        <td>1994</td>
+        <td>Animação</td>
+        <td>Nome Ator</td>
+        <td>9</td>
+      </tr>
+      
+      <tr>
+        <th scope="row">4</th>
+        <td>Procurando Nemo</td>
+        <td>Andrew Stanton</td>
+        <td>2003</td>
+        <td>Animação</td>
+        <td>Nome Ator</td>
+        <td>9</td>
+      </tr>
+      
+      <tr>
+        <th scope="row">5</th>
+        <td>Wall-E</td>
+        <td>Andrew Stanton</td>
+        <td>2008</td>
+        <td>Animação</td>
+        <td>Nome Ator</td>
+        <td>9</td>
+      </tr>
+      
+      <tr>
+        <th scope="row">6</th>
+        <td>Up: Altas Aventuras</td>
+        <td>Pete Docter</td>
+        <td>2009</td>
+        <td>Animação</td>
+        <td>Nome Ator</td>
+        <td>9</td>
+      </tr>
+      
+      <tr>
+        <th scope="row">7</th>
+        <td>Zootopia</td>
+        <td>Byron Howard, Rich Moore</td>
+        <td>2016</td>
+        <td>Animação</td>
+        <td>Nome Ator</td>
+        <td>9</td>
+      </tr>
+      
+      <tr>
+        <th scope="row">8</th>
+        <td>Frozen: Uma Aventura Congelante</td>
+        <td>Chris Buck, Jennifer Lee</td>
+        <td>2013</td>
+        <td>Animação</td>
+        <td>Nome Atriz</td>
+        <td>9</td>
+      </tr>
+      
+      <tr>
+        <th scope="row">9</th>
+        <td>Os Incríveis</td>
+        <td>Brad Bird</td>
+        <td>2004</td>
+        <td>Animação</td>
+        <td>Nome Atriz</td>
+        <td>9</td>
+      </tr>
+      
+      <tr>
+        <th scope="row">10</th>
+        <td>Coco</td>
+        <td>Lee Unkrich</td>
+        <td>2017</td>
+        <td>Animação</td>
+        <td>Nome Atriz</td>
+        <td>9</td>
+      </tr>
+      <tr id=""insertRow"> </tr>
+      </tbody>
+    </table>
+
+  </div>
+  <div class="mb-5 mt-6">
+    <hr class="border-primary border-3 opacity=75" />
+  </div>
+
+  <div class="container mb-5">
+    <h2 class="text-center mb-5">Cadastro de Filmes</h2>
+
+    <form name="register" onsubmit="event.preventDefault()">
+      <!-- cadastro do titulo e cód-->
+      <div class="row">
+        <div class="mb-3 col">
+          <label for="codFilm" class="form-label">Código</label>
+          <input type="text" class="form-control" id="codFilm" name="cod" />
+        </div>
+        <div class="mb-3 col">
+          <label for="titleFilm" class="form-label">Título</label>
+          <input type="text" class="form-control" id="titleFilm" placeholder="Nome do Filme" name="title" />
+        </div>
+      </div>
+
+      <!-- CADASTRO DIRETOR E LANÇAMENTO-->
+      <div class="row">
+        <div class="mb-3 col">
+          <label for="codDir" class="form-label">Diretor</label>
+          <input type="text" class="form-control" id="codDir" placeholder="Nome do autor do filme" name="director" />
+        </div>
+        <div class="mb-3 col">
+          <label for="codLan" class="form-label">Lançamento</label>
+          <input type="date" class="form-control" id="codLan" placeholder="dd/mm/aaaa" name="date" />
+        </div>
+      </div>
+
+      <!-- cadastro de ator/atriz principal e nota-->
+      <div class="row">
+        <div class="mb-3 col">
+          <label for="codActor" class="form-label">Ator/Atriz</label>
+          <input type="text" class="form-control" id="codActor" placeholder="Nome do ator ou atriz principal" name="actor" />
+        </div>
+        <div class="mb-3 col">
+          <label for="codNota" class="form-label">Nota</label>
+          <input type="text" class="form-control" id="codNota" placeholder="Nota do filme" name="nota" />
+        </div>
+      </div>
+
+      <!-- CADASTRO DE GÊNEROS DE FILMES com opção de botão rádio -->
+      <p><b>SELECIONE UM GÊNERO</b></p>
+      <div class="row mt-3">
+        <div class="col form-check">
+          <input type="radio" id="radioGAcao" name="radio" class="form-check-input" value="acao" />
+          <label for="radioGAcao" class="form-label">Ação</label>
+        </div>
+
+        <div class="col form-check">
+          <input type="radio" id="radioGAnim" name="radio" class="form-check-input" value="animacao" />
+          <label for="radioGAnim" class="form-label">Animação</label>
+        </div>
+
+        <div class="col form-check">
+          <input type="radio" id="radioGRoman" name="radio" class="form-check-input" value="romance" />
+          <label for="radioGRoman" class="form-label">Romance</label>
+        </div>
+
+        <div class="col form-check">
+          <input type="radio" id="radioGSus" name="radio" class="form-check-input" value="suspense" />
+          <label for="radioGSus" class="form-label">Suspense</label>
+        </div>
+
+        <div class="col form-check">
+          <input type="radio" id="radioGTer" name="radio" class="form-check-input" value="terror" />
+          <label for="radioGTer" class="form-label">Terror</label>
+        </div>
+      </div>
+
+      <!-- botão de enviar-->
+      <div class="col-auto d-flex justify-content-center">
+        <button
+          type="submit"
+          onclick="validationForm(); insert()"
+          class="btn btn-primary mt-3"
+        >
+          Cadastrar
+        </button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
